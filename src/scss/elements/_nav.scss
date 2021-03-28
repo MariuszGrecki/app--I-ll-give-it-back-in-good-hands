@@ -1,0 +1,27 @@
+.nav {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 20px 25px;
+}
+.nav__li {
+  list-style-type: none;
+  margin-right: 30px;
+}
+
+a {
+  letter-spacing: 0px;
+  color: #737373;
+  text-decoration: none;
+}
+.active {
+  border: 1px solid #FAD648;
+  letter-spacing: 3px;
+  text-shadow: none;
+  padding: 10px;
+}
+.chwila {
+  display: block;
+  width:10px;
+}
