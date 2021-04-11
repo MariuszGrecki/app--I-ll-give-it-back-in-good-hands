@@ -1,0 +1,40 @@
+.contact__main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login {
+  width: 420px;
+  height: 235px;
+  background-color: #F0F1F1;
+}
+.login__textField {
+  width: 70% !important;
+  margin-top: 40px !important;
+}
+.login__error {
+  color:red;
+  text-align: left;
+  margin-left: 60px;
+}
+.login__btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width:600px;
+  padding-top: 40px;
+}
+.login__button {
+  text-decoration: none;
+  font-size: 18px;
+  color: #737373;
+  font-family: 'Open Sans', sans-serif;
+  padding: 10px;
+}
+
+.login__button:hover {
+  border: 0.75px solid #3C3C3C !important;
+  text-shadow: none;
+}

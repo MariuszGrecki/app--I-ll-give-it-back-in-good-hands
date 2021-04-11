@@ -1,0 +1,34 @@
+
+.registration {
+  width: 420px;
+  height: 360px;
+  background-color: #F0F1F1;
+}
+.registration__textField {
+  width: 70% !important;
+  margin-top: 40px !important;
+}
+.registration__error {
+  color:red;
+  text-align: left;
+  margin-left: 62px;
+}
+.registration__btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width:600px;
+  padding-top: 40px;
+}
+.registration__button {
+  text-decoration: none;
+  font-size: 18px;
+  color: #737373;
+  font-family: 'Open Sans', sans-serif;
+  padding: 10px;
+}
+
+.login__button:hover {
+  border: 0.75px solid #3C3C3C !important;
+  text-shadow: none;
+}

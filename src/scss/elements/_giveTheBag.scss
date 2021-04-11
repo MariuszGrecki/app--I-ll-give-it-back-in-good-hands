@@ -1,0 +1,159 @@
+.give {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.give__background{
+  background-image: url("../../assets/Form-Hero-Image.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  top: -70px;
+  width: 50vw;
+  height: 100vh;
+}
+.give__text {
+  width: 50%;
+  position: relative;
+  top: -70px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.step1__header{
+  width: 100%;
+  height: 170px;
+  background-color: #FAD648;
+  position: relative;
+  top: -70px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.step1__title{
+ font-size: 36px;
+  color: black;
+  margin-left: 142px;
+}
+.step1__text{
+  font-size: 22px;
+  margin-left: 141px;
+  padding-top: 15px;
+  text-align: left;
+}
+.step1__background{
+  background-image: url("../../assets/Background-Form.jpg");
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  top: -70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.step1__form{
+  width: 100%;
+  margin-left: 142px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+align-items: flex-start;
+  text-align: left;
+}
+.step1__steps{
+  font-size: 24px;
+  padding-top: 50px;
+  color: #3C3C3C;
+}
+.step1__title__inside{
+  color: black;
+  font-size: 36px;
+  padding-top: 100px;
+}
+.step1__label{
+  color: black;
+  font-size: 24px;
+}
+
+.input{
+   width: 20px;
+   height: 20px;
+   border-radius: 0px;
+ }
+.step1__input{
+  padding-top: 40px;
+}
+.step1__buttons {
+  padding-top: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.step1__button {
+  font-size: 36px;
+  height: 120px;
+  width: 310px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: 0px;
+}
+.step1__button:hover {
+  border: 1px solid #3C3C3C;
+}
+.step2__title__inside{
+  color: black;
+  font-size: 36px;
+  padding-top: 100px;
+  padding-bottom: 45px;
+}
+.step2__buttons {
+  padding-top: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.step3__title__inside{
+  color: black;
+  font-size: 36px;
+  padding-top: 20px;
+  padding-bottom: 45px;
+}
+.step3__buttons {
+  padding-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.step4 {
+  display: flex;
+  width: 70%;
+  align-items: flex-start;
+  justify-content: center;
+}
+.step4__input {
+ width: 50%;
+}
+.step4__buttons {
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.step5__form{
+  width: 100%;
+  margin-left: 142px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+.step5__title__inside{
+  color: black;
+  font-size: 24px;
+  padding-top: 10px;
+}
