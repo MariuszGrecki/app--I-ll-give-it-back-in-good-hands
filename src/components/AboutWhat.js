@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {NavLink} from "react-router-dom";
 import icon1 from "../../src/assets/Icon-1.svg"
 import icon2 from "../../src/assets/Icon-2.svg"
@@ -6,6 +6,9 @@ import icon3 from "../../src/assets/Icon-3.svg"
 import icon4 from "../../src/assets/Icon-4.svg"
 
 const AboutWhat = () => {
+
+    let [message, setMessage] = useState(localStorage.getItem('myValueInLocalStorage') || '')
+
     return (
         <div className="about" id="threeColumns">
             <h1 className="home__title">Wystarczą 4 proste kroki</h1>
@@ -38,7 +41,12 @@ const AboutWhat = () => {
                 </div>
                 </div>
             </div>
-            <div className="home__button"><NavLink to="/Login" exact>ODDAJ <br/> RZECZY</NavLink></div>
+            {message === '' &&
+            <div className="home__button">
+                <NavLink to="/Login" exact>ODDAJ <br/> RZECZY</NavLink></div>}
+            {message &&
+            (<div className="home__button">
+                <NavLink to="/GiveTheBag" exact>ODDAJ <br/> RZECZY</NavLink></div>)}
         </div>
     );
 };

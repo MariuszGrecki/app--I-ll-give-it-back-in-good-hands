@@ -31,6 +31,7 @@ const App = () => {
                     <section className="section">
                         <Switch>
                             <Route path="/" exact component={Home}/>
+                            <Route path="/app--I-ll-give-it-back-in-good-hands" component={Home}/>
                             <Route path="/Login" component={Login}/>
                             <Route path="/Registration" component={Registration}/>
                             <Route path="/wylogowano" component={LogOut}/>

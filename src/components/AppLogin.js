@@ -20,12 +20,14 @@ const AppLogin = () => {
                     <div className="nav">
                         <li className="nav__li">{message}</li>
                         <li className="nav__li"><NavLink to="/GiveTheBag" exact>Oddaj rzeczy </NavLink></li>
+                        <li className="nav__li"><NavLink to="/panel" >Panel </NavLink></li>
                         <li className="nav__li" onClick={reload}><NavLink to="/wylogowano">Wyloguj </NavLink></li>
                     </div>
                 </nav>
                 <section className="section">
                     <Switch>
                         <Route path="/" exact component={Home}/>
+                        <Route path="/app--I-ll-give-it-back-in-good-hands"component={Home}/>
                         <Route path="/Login" component={Home}/>
                         <Route path="/Registration" component={Home}/>
                         <Route path="/GiveTheBag" component={GiveTheBag}/>
