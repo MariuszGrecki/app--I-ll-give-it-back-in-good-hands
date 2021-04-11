@@ -1,23 +1,29 @@
 {
   "files": {
-    "main.css": "/app--I-ll-give-it-back-in-good-hands/static/css/main.3ce9ddf0.chunk.css",
-    "main.js": "/app--I-ll-give-it-back-in-good-hands/static/js/main.e7f63654.chunk.js",
-    "main.js.map": "/app--I-ll-give-it-back-in-good-hands/static/js/main.e7f63654.chunk.js.map",
-    "runtime-main.js": "/app--I-ll-give-it-back-in-good-hands/static/js/runtime-main.50a35afb.js",
-    "runtime-main.js.map": "/app--I-ll-give-it-back-in-good-hands/static/js/runtime-main.50a35afb.js.map",
-    "static/js/2.5139864c.chunk.js": "/app--I-ll-give-it-back-in-good-hands/static/js/2.5139864c.chunk.js",
-    "static/js/2.5139864c.chunk.js.map": "/app--I-ll-give-it-back-in-good-hands/static/js/2.5139864c.chunk.js.map",
-    "static/js/3.ccebef4f.chunk.js": "/app--I-ll-give-it-back-in-good-hands/static/js/3.ccebef4f.chunk.js",
-    "static/js/3.ccebef4f.chunk.js.map": "/app--I-ll-give-it-back-in-good-hands/static/js/3.ccebef4f.chunk.js.map",
+    "main.css": "/app--I-ll-give-it-back-in-good-hands/static/css/main.0a21d281.chunk.css",
+    "main.js": "/app--I-ll-give-it-back-in-good-hands/static/js/main.2e0ea12f.chunk.js",
+    "main.js.map": "/app--I-ll-give-it-back-in-good-hands/static/js/main.2e0ea12f.chunk.js.map",
+    "runtime-main.js": "/app--I-ll-give-it-back-in-good-hands/static/js/runtime-main.03df6550.js",
+    "runtime-main.js.map": "/app--I-ll-give-it-back-in-good-hands/static/js/runtime-main.03df6550.js.map",
+    "static/js/2.6473c623.chunk.js": "/app--I-ll-give-it-back-in-good-hands/static/js/2.6473c623.chunk.js",
+    "static/js/2.6473c623.chunk.js.map": "/app--I-ll-give-it-back-in-good-hands/static/js/2.6473c623.chunk.js.map",
+    "static/js/3.8f1ffceb.chunk.js": "/app--I-ll-give-it-back-in-good-hands/static/js/3.8f1ffceb.chunk.js",
+    "static/js/3.8f1ffceb.chunk.js.map": "/app--I-ll-give-it-back-in-good-hands/static/js/3.8f1ffceb.chunk.js.map",
     "index.html": "/app--I-ll-give-it-back-in-good-hands/index.html",
-    "static/css/main.3ce9ddf0.chunk.css.map": "/app--I-ll-give-it-back-in-good-hands/static/css/main.3ce9ddf0.chunk.css.map",
-    "static/js/2.5139864c.chunk.js.LICENSE.txt": "/app--I-ll-give-it-back-in-good-hands/static/js/2.5139864c.chunk.js.LICENSE.txt",
-    "static/media/main.scss": "/app--I-ll-give-it-back-in-good-hands/static/media/Home-Hero-Image.0c4f237f.jpg"
+    "static/css/main.0a21d281.chunk.css.map": "/app--I-ll-give-it-back-in-good-hands/static/css/main.0a21d281.chunk.css.map",
+    "static/js/2.6473c623.chunk.js.LICENSE.txt": "/app--I-ll-give-it-back-in-good-hands/static/js/2.6473c623.chunk.js.LICENSE.txt",
+    "static/media/main.scss": "/app--I-ll-give-it-back-in-good-hands/static/media/yellow-aesthetic-wallpaper-20072002132013.82eaf2cc.jpg",
+    "static/media/Icon-1.bd3d092a.svg": "/app--I-ll-give-it-back-in-good-hands/static/media/Icon-1.bd3d092a.svg",
+    "static/media/Icon-2.cfac69a1.svg": "/app--I-ll-give-it-back-in-good-hands/static/media/Icon-2.cfac69a1.svg",
+    "static/media/Icon-3.564c1731.svg": "/app--I-ll-give-it-back-in-good-hands/static/media/Icon-3.564c1731.svg",
+    "static/media/Icon-4.f1b3fb6d.svg": "/app--I-ll-give-it-back-in-good-hands/static/media/Icon-4.f1b3fb6d.svg",
+    "static/media/People.2fa041c6.jpg": "/app--I-ll-give-it-back-in-good-hands/static/media/People.2fa041c6.jpg",
+    "static/media/Signature.8f2a001d.svg": "/app--I-ll-give-it-back-in-good-hands/static/media/Signature.8f2a001d.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.50a35afb.js",
-    "static/js/2.5139864c.chunk.js",
-    "static/css/main.3ce9ddf0.chunk.css",
-    "static/js/main.e7f63654.chunk.js"
+    "static/js/runtime-main.03df6550.js",
+    "static/js/2.6473c623.chunk.js",
+    "static/css/main.0a21d281.chunk.css",
+    "static/js/main.2e0ea12f.chunk.js"
   ]
 }
