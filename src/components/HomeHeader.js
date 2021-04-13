@@ -1,12 +1,9 @@
 import React, {useState} from 'react';
 import {
-    BrowserRouter,
-    Route,
     NavLink,
 } from 'react-router-dom';
 
 const HomeHeader = () => {
-
     let [message, setMessage] = useState(localStorage.getItem('myValueInLocalStorage') || '')
 
     return (

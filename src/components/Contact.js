@@ -8,7 +8,6 @@ const Contact = () => {
             <div className="contact" id="contact">
                 <div className="contact__background"></div>
                 <ContactForm/>
-
             </div>
             <div className="footer">
                 <div className="footer__text">Copyright by Coders Lab</div>

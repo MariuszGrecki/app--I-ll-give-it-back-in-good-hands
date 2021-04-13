@@ -16,7 +16,6 @@ import LogOut from "./components/LogOut";
 const App = () => {
     let [message, setMessage] = useState(localStorage.getItem('myValueInLocalStorage') || '')
 
-
     if (message === "") {
         return (
             <BrowserRouter>

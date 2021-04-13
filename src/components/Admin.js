@@ -1,15 +1,16 @@
 import React, {useEffect, useState} from 'react';
 import {db} from "./FirebaseConfig";
-import PanelOrder from "./PanelOrder";
-import PanelOrderUsers from "./PanelOrderUsers";
+import PanelAdmin from "./PanelAdmin";
+import PanelAdminUsers from "./PanelAdminUsers";
 
-const Panel = () => {
+const Admin =()=> {
+
     let [app, setApp] = useState([])
     let [users, setUsers] = useState([])
 
     useEffect(() => {
         getGive();
-        getGive2()
+        getGive2();
     }, [])
 
     function getGive() {
@@ -54,7 +55,7 @@ const Panel = () => {
         <div className="admin__body">
             <div>
                 {app.map((any) =>
-                    <PanelOrder
+                    <PanelAdmin
                         id={any.id}
                         inprogress={any.inprogress}
                         message={any.message}
@@ -79,7 +80,7 @@ const Panel = () => {
             </div>
             <div>
                 {users.map((doit) =>
-                    <PanelOrderUsers
+                    <PanelAdminUsers
                         id={doit.id}
                         username={doit.username}
                         userpassword={doit.userpassword}
@@ -91,4 +92,4 @@ const Panel = () => {
     );
 };
 
-export default Panel;
+export default Admin;

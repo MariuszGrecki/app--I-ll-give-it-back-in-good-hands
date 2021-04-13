@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import TextField from "@material-ui/core/TextField";
 import {NavLink} from "react-router-dom";
+import {db} from "./FirebaseConfig";
+import CheckLogin from "./CheckLogin";
 
 const Login = () => {
     let [email, setEmail] = useState("")
@@ -8,6 +10,8 @@ const Login = () => {
     let [error, setError] = useState("")
     let [error2, setError2] = useState("")
     let [message, setMessage] = useState("")
+    let [app, setApp] = useState([])
+
 
     const selectEmail = (e) => {
         setEmail(e.target.value)
@@ -18,6 +22,22 @@ const Login = () => {
     useEffect(() => {
         localStorage.setItem('myValueInLocalStorage', message);
     }, [message]);
+
+
+    useEffect(() => {
+        getGive();
+    }, [])
+
+    function getGive() {
+        db.collection("users").onSnapshot(function (querySnapshot) {
+            setApp(
+                querySnapshot.docs.map((doc) => ({
+                    id: doc.id,
+                    username: doc.data().username,
+                    userpassword: doc.data().password,
+                })))
+        })
+    }
 
     const Submit = (e) => {
         e.preventDefault()
@@ -77,7 +97,17 @@ const Login = () => {
                 <div className="login__button">
                     <NavLink to="/Registration">Załóż konto</NavLink>
                 </div>
-                <div onClick={Submit} className="login__button">Zaloguj się</div>
+                {<div /*onClick={Submit} className="login__button"*/>
+                    {app.map((any) =>
+                        <CheckLogin
+                            id={any.id}
+                            username={any.username}
+                            userpassword={any.userpassword}
+                            email={email}
+                            password={password}
+                        />
+                    )}
+                </div>  }
             </div>
         </div>
     );

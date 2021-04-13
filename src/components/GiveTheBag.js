@@ -2,11 +2,8 @@ import React, {useEffect, useState} from 'react';
 import Contact from "./Contact";
 import TextField from "@material-ui/core/TextField";
 import {db} from "./FirebaseConfig";
-import firebase from "firebase";
-
 
 const GiveTheBag = () => {
-
     let [app, setApp] = useState([])
     let [current, setCurrent] = useState(1)
     let [message, setMessage] = useState(localStorage.getItem('myValueInLocalStorage') || '')
@@ -66,7 +63,6 @@ const GiveTheBag = () => {
                 })))
         })
     }
-
 
     const next = () => {
         setCurrent(current + 1)
@@ -410,7 +406,6 @@ const GiveTheBag = () => {
                                     <p className="step1__button" onClick={back}>Wstecz</p>
                                     <p className="step1__button" onClick={next}>Dalej</p>
                                 </div>
-
                             </div>
                         </div>
                     </>

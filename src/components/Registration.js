@@ -1,6 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import TextField from "@material-ui/core/TextField";
 import {NavLink} from "react-router-dom";
+import {db} from "./FirebaseConfig";
+
 
 const Registration = () => {
     let [email, setEmail] = useState("")
@@ -10,6 +12,7 @@ const Registration = () => {
     let [error2, setError2] = useState("")
     let [error3, setError3] = useState("")
     let [message, setMessage] = useState("")
+    let [tru, setTru] = useState("")
 
 
     const selectEmail = (e) => {
@@ -27,16 +30,20 @@ const Registration = () => {
     }, [message]);
 
     const Submit = (e) => {
-        e.preventDefault()
-
         if (email.indexOf('@') !== -1 && password.length >= 6 && password === repeat) {
-            setEmail("")
+            db.collection("users").add({
+                username: email,
+                password: password,
+            })
+           setEmail("")
             setPassword("")
             setRepeat("")
             setError("")
             setError2("")
             setMessage(email)
-            window.location.reload();
+            setTru("udało się!")
+
+            /*window.location.reload();*/
         } else if (email.indexOf('@') === -1) {
             setError("Podany email jest nieprawidłowy!")
         } else if (password.length < 6) {
@@ -103,6 +110,7 @@ const Registration = () => {
                     <NavLink to="/Login">Zaloguj się</NavLink>
                 </div>
                 <div onClick={Submit} className="registration__button">Zarejestruj się</div>
+                <div>{tru}</div>
             </div>
         </div>
     );

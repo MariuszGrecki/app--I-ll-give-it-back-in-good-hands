@@ -1,6 +1,5 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import TextField from "@material-ui/core/TextField";
-import {NavLink} from "react-router-dom";
 
 const ContactForm = () => {
     let [email, setEmail] = useState("")
@@ -9,7 +8,6 @@ const ContactForm = () => {
     let [error, setError] = useState("")
     let [error2, setError2] = useState("")
     let [error3, setError3] = useState("")
-
 
     const selectEmail = (e) => {
         setEmail(e.target.value)
@@ -23,7 +21,6 @@ const ContactForm = () => {
 
     const Submit = (e) => {
         e.preventDefault()
-
         if (email.indexOf('@') !== -1 && (name.indexOf(' ') === -1) && message.length>120) {
             setEmail("")
             setName("")
@@ -62,17 +59,19 @@ const ContactForm = () => {
                                 <h1 className="contact__error"> {error2}</h1>
                             </div>
                             <div className="contact__text1">
-                                <TextField id="standard-full-width"
-                                           label="Wpisz swój email"
-                                           className="enter__name"
-                                           style={{margin: 8, width: "100%"}}
-                                           placeholder="abcd@ayz.pl"
-                                           fullWidth
-                                           margin="normal"
-                                           InputLabelProps={{
-                                               shrink: true,
-                                           }}
-                                           onChange={e => selectEmail(e)}/>
+                                <TextField
+                                    id="standard-full-width"
+                                    label="Wpisz swój email"
+                                    className="enter__name"
+                                    style={{margin: 8, width: "100%"}}
+                                    placeholder="abcd@ayz.pl"
+                                    fullWidth
+                                    margin="normal"
+                                    InputLabelProps={{
+                                        shrink: true,
+                                    }}
+                                    onChange={e => selectEmail(e)}
+                                />
                                 <h1 className="contact__error"> {error}</h1>
                             </div>
                         </div>

@@ -21,4 +21,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-family: $font-alt;
+}
+
+.admin__body {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
 }

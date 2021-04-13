@@ -5,6 +5,7 @@ import Home from "./Home";
 import ErrorPage from "./ErrorPage";
 import LogOut from "./LogOut";
 import Panel from "./Panel";
+import Admin from "./Admin";
 
 const AppLogin = () => {
     let [message, setMessage] = useState(localStorage.getItem('myValueInLocalStorage') || '')
@@ -20,7 +21,8 @@ const AppLogin = () => {
                     <div className="nav">
                         <li className="nav__li">{message}</li>
                         <li className="nav__li"><NavLink to="/GiveTheBag" exact>Oddaj rzeczy </NavLink></li>
-                        <li className="nav__li"><NavLink to="/panel" >Panel </NavLink></li>
+                        <li className="nav__li"><NavLink to="/user" >User </NavLink></li>
+                        <li className="nav__li"><NavLink to="/admin" >Admin </NavLink></li>
                         <li className="nav__li" onClick={reload}><NavLink to="/wylogowano">Wyloguj </NavLink></li>
                     </div>
                 </nav>
@@ -32,7 +34,8 @@ const AppLogin = () => {
                         <Route path="/Registration" component={Home}/>
                         <Route path="/GiveTheBag" component={GiveTheBag}/>
                         <Route path="/wylogowano" component={LogOut}/>
-                        <Route path="/panel" component={Panel}/>
+                        <Route path="/user" component={Panel}/>
+                        <Route path="/admin" component={Admin}/>
                         <Route component={ErrorPage}/>
                     </Switch>
                 </section>
